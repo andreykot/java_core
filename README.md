@@ -4,3 +4,6 @@ Completed projects:
 - [Encryption-Decryption](https://hyperskill.org/projects/46?track=17)
 - [JSON Database](https://hyperskill.org/projects/65?track=17)
 - [Simple Search Engine](https://hyperskill.org/projects/66?track=17)
+
+Each project consists of source (./src) and test (./test) files where personal tests are in the "MyTests.java" files.
+
