@@ -141,7 +141,7 @@ public class TestApp {
         outContent.reset();
 
         App app2 = new App();
-        app1.initArgs(new String[] {
+        app2.initArgs(new String[] {
                 "-mode", "dec",
                 "-key", "-5",
                 "-data", "\u003C\u003D\u005E\u001B\u0073\u0074\u0075",
@@ -165,6 +165,7 @@ public class TestApp {
                 "-alg", "shift",
                 "-in", "src/test/resources/test_data.txt"
         });
+        app1.run();
         assertEquals(correctOutput, outContent.toString().strip());
 
         App app2 = new App();
@@ -175,7 +176,7 @@ public class TestApp {
                 "-in", "src/test/resources/test_data.txt",
                 "-out", "src/test/resources/output.txt"
         });
-
+        app2.run();
         try {
             String output = new String(Files.readAllBytes(Paths.get("src/test/resources/output.txt")));
             assertEquals(correctOutput, output.strip());
