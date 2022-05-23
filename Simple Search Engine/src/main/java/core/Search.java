@@ -1,8 +1,8 @@
 package core;
 
 public class Search {
-    SearchEngine engine;
-    SearchType type;
+    private SearchEngine engine;
+    private SearchType type;
 
     public void setEngine(SearchEngine engine) {
         this.engine = engine;

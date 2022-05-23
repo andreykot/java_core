@@ -3,8 +3,8 @@ package core;
 import java.util.*;
 
 public class InvertedIndexSearch implements SearchEngine {
-    String[] input;
-    HashMap<String, ArrayList<Integer>> invertedIndex = new HashMap<>();
+    private final String[] input;
+    private final HashMap<String, ArrayList<Integer>> invertedIndex = new HashMap<>();
 
     public InvertedIndexSearch(String[] input) {
         this.input = input;

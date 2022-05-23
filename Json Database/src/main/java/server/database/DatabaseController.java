@@ -11,12 +11,12 @@ import java.util.Map;
 
 public class DatabaseController {
 
-    Gson gson = new Gson();
+    private final Gson gson = new Gson();
 
     private final Database db;
     private final ServerSocket server;
 
-    public DatabaseRequest request;
+    private DatabaseRequest request;
 
     public DatabaseController(ServerSocket server, Database db) {
         this.server = server;

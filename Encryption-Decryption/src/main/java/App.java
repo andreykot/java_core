@@ -6,12 +6,12 @@ import java.nio.file.Paths;
 
 public class App {
 
-    String mode = "enc";
-    int key = 0;
-    String data = "";
-    String out = "";
-    String in = "";
-    String alg = "shift";
+    private String mode = "enc";
+    private int key = 0;
+    private String data = "";
+    private String out = "";
+    private String in = "";
+    private String alg = "shift";
 
     public void run() {
         EncryptionFactory algFactory = new EncryptionFactory();

@@ -9,11 +9,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class JsonDatabase implements Database {
 
-    File dbFile;
-
+    private final File dbFile;
     private final Gson gson = new Gson();
     private final ReadWriteLock lock = new ReentrantReadWriteLock();
-    // private final HashMap<String, String> storage = new HashMap<>();
 
     public JsonDatabase(File file) {
         this.dbFile = file;
