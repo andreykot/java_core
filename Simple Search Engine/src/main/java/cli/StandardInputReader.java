@@ -2,11 +2,11 @@ package cli;
 
 import java.util.Scanner;
 
-class StandardInput implements InputDataReader {
+class StandardInputReader implements InputDataReader {
     private Scanner scanner;
     private String[] data;
 
-    public StandardInput(Scanner scanner) {
+    public StandardInputReader(Scanner scanner) {
         this.scanner = scanner;
     }
 

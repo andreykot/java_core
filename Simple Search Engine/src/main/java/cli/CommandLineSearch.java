@@ -29,9 +29,9 @@ public class CommandLineSearch {
     private String[] getInput() {
         InputDataReader input;
         if (inputFile == null) {
-            input = new StandardInput(scanner);
+            input = new StandardInputReader(scanner);
         } else {
-            input = new FileInput(inputFile);
+            input = new FileInputReader(inputFile);
         }
         input.read();
         return input.getData();

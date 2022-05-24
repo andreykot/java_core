@@ -4,11 +4,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-class FileInput implements InputDataReader {
+class FileInputReader implements InputDataReader {
     private final String filePath;
     private String[] data;
 
-    public FileInput(String filePath) {
+    public FileInputReader(String filePath) {
         this.filePath = filePath;
     }
 
