@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class CommandLineSearch {
 
-    Scanner scanner = new Scanner(System.in);
-    String inputFile;
+    private final Scanner scanner = new Scanner(System.in);
+    private String inputFile;
 
     public CommandLineSearch() {}
 
@@ -27,11 +27,11 @@ public class CommandLineSearch {
     }
 
     private String[] getInput() {
-        InputData input;
+        InputDataReader input;
         if (inputFile == null) {
-            input = new StandardInput(scanner);
+            input = new StandardInputReader(scanner);
         } else {
-            input = new FileInput(inputFile);
+            input = new FileInputReader(inputFile);
         }
         input.read();
         return input.getData();

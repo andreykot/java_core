@@ -2,13 +2,11 @@ package server.database;
 
 import com.google.gson.*;
 
-import java.util.Map;
-import java.util.stream.Stream;
 
 public class DatabaseRequest {
-    String type;
-    JsonElement key = JsonParser.parseString("{}");
-    JsonElement value = JsonParser.parseString("{}");
+    protected String type;
+    protected JsonElement key = JsonParser.parseString("{}");
+    protected JsonElement value = JsonParser.parseString("{}");
 
     public DatabaseRequest(JsonElement json) {
         this.type = json.getAsJsonObject().get("type").getAsString();

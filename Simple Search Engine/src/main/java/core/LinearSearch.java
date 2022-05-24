@@ -6,8 +6,8 @@ import java.util.Arrays;
 @Deprecated
 // public class LinearSearch implements SearchEngine {
 public class LinearSearch {
-    String[] input;
-    ArrayList<String[]> parsedInput;
+    private final String[] input;
+    private final ArrayList<String[]> parsedInput;
 
     public LinearSearch(String[] input) {
         this.input = input;

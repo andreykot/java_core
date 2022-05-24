@@ -7,8 +7,8 @@ import java.util.Scanner;
 import java.util.stream.Stream;
 
 public class Menu {
-    Scanner scanner;
-    Search search;
+    private final Scanner scanner;
+    private final Search search;
 
     final int findStatus = 1;
     final int printAllStatus = 2;
